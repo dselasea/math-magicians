@@ -45,6 +45,7 @@
 
 ### Key Features <a name="key-features"></a>
 
+- **React**
 - **Calculator**
 - **Random Math Quotes**
 - **React Router**
