@@ -1,8 +1,10 @@
 import React from 'react';
 
 const Calculator = () => {
-  const buttonNumbers = [{ id: 1, btn: 'AC' },
+  const buttonNumbers = [
+    { id: 1, btn: 'AC' },
     { id: 2, btn: '+/-' },
+    { id: 3, btn: '%' },
     { id: 3, btn: '/' },
     { id: 4, btn: '7' },
     { id: 5, btn: '8' },
@@ -17,12 +19,15 @@ const Calculator = () => {
     { id: 14, btn: '3' },
     { id: 15, btn: '+' },
     { id: 16, btn: '0' },
+    { id: 16, btn: '.' },
     { id: 17, btn: '=' },
   ];
   return (
-    <div>
-      <input type="text" />
-      {buttonNumbers.map((button) => <button key={button.id} type="button">{button.btn}</button>)}
+    <div className="container">
+      <input type="text" id="input" placeholder="0" />
+      <div className="btn-container">
+        {buttonNumbers.map((button) => <button key={button.id} type="button">{button.btn}</button>)}
+      </div>
     </div>
   );
 };

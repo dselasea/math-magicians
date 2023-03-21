@@ -25,3 +25,43 @@ code {
     'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 200px;
+  width: 80%;
+  margin: 4rem auto;
+}
+
+.container input {
+  width: 100%;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr)
+}
+
+.container input,
+.container button {
+  padding: 0.8rem 1rem;
+}
+
+.container button {
+  border: 1px solid #9D9DA7;
+  cursor: pointer;
+}
+
+.container button:nth-child(4n + 0) {
+  background-color: #f67c18;
+  color: #fff;
+}
+
