@@ -60,7 +60,12 @@ code {
   cursor: pointer;
 }
 
-.container button:nth-child(4n + 0) {
+.container button:nth-child(17) {
+  grid-column: 1 / span 2;
+}
+
+.container button:nth-child(4n + 0),
+.container button:nth-child(19) {
   background-color: #f67c18;
   color: #fff;
 }
