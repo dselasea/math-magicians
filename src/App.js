@@ -5,7 +5,7 @@ function App() {
     { id: 1, btn: 'AC' },
     { id: 2, btn: '+/-' },
     { id: 3, btn: '%' },
-    { id: 4, btn: '/' },
+    { id: 4, btn: '÷' },
     { id: 5, btn: '7' },
     { id: 6, btn: '8' },
     { id: 7, btn: '9' },

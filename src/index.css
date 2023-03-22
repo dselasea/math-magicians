@@ -58,6 +58,7 @@ code {
 
 .container button {
   border: 1px solid rgba(128, 128, 128, 0.247);
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -69,4 +70,5 @@ code {
 .container button:nth-child(19) {
   background-color: #f67c18;
   color: #fff;
+  font-size: 1.3rem;
 }
