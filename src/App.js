@@ -9,7 +9,7 @@ function App() {
     { id: 5, btn: '7' },
     { id: 6, btn: '8' },
     { id: 7, btn: '9' },
-    { id: 8, btn: '*' },
+    { id: 8, btn: 'x' },
     { id: 9, btn: '4' },
     { id: 10, btn: '5' },
     { id: 11, btn: '6' },

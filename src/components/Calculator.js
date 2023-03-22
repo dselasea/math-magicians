@@ -1,16 +1,26 @@
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import React from 'react';
+import calculate from '../logic/calculate';
+import Input from './Input';
 
-function Calculator({ buttons }) {
+const Calculator = ({ buttons }) => {
+  const [calculation, setCalculation] = useState({ total: 0, next: null, operation: null });
+
+  const handleCalculation = (e) => {
+    const result = calculate(calculation, e.target.name);
+    setCalculation(result);
+    console.log(result);
+  };
+
   return (
     <div className="container">
-      <input type="text" id="input" placeholder="0" readOnly />
+      <Input calculation={calculation} />
       <div className="btn-container">
-        {buttons.map((button) => <button type="button" key={button.id}>{ button.btn }</button>)}
+        {buttons.map((button) => <button type="button" name={button.btn} onClick={handleCalculation} key={button.id}>{ button.btn }</button>)}
       </div>
     </div>
   );
-}
+};
 
 Calculator.propTypes = {
   buttons: PropTypes.arrayOf(
