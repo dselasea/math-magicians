@@ -4,12 +4,11 @@ import calculate from '../logic/calculate';
 import Input from './Input';
 
 const Calculator = ({ buttons }) => {
-  const [calculation, setCalculation] = useState({ total: 0, next: null, operation: null });
+  const [calculation, setCalculation] = useState({ total: 0, next: 0, operation: null });
 
   const handleCalculation = (e) => {
     const result = calculate(calculation, e.target.name);
     setCalculation(result);
-    console.log(result);
   };
 
   return (
