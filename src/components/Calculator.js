@@ -1,15 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Buttons from './Buttons';
-import calculate from '../logic/calculate';
-import operate from '../logic/operate';
 
 function Calculator({ buttons }) {
   return (
     <div className="container">
       <input type="text" id="input" placeholder="0" readOnly />
       <div className="btn-container">
-        {buttons.map((button) => <Buttons button={button} key={button.id} />)}
+        {buttons.map((button) => <button type="button" key={button.id}>{ button.btn }</button>)}
       </div>
     </div>
   );
