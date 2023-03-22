@@ -14,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
@@ -33,10 +34,9 @@ code {
 }
 
 .container {
-  max-width: 200px;
+  max-width: 400px;
   width: 80%;
   margin: 4rem auto;
-  border: 2px solid
 }
 
 .container input {
@@ -53,11 +53,11 @@ code {
 
 .container input,
 .container button {
-  padding: 0.8rem 1rem;
+  padding: 1.2rem 1rem;
 }
 
 .container button {
-  border: 0;
+  border: 1px solid rgba(128, 128, 128, 0.247);
   cursor: pointer;
 }
 
