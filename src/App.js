@@ -1,4 +1,5 @@
 import Calculator from './components/Calculator';
+import Data from './components/Data';
 
 function App() {
   const buttons = [
@@ -23,9 +24,10 @@ function App() {
     { id: 19, btn: '=' },
   ];
   return (
-    <>
+    <div className="container">
       <Calculator buttons={buttons} />
-    </>
+      <Data />
+    </div>
   );
 }
 
