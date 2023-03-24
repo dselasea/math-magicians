@@ -12,9 +12,9 @@ const Calculator = ({ buttons }) => {
   };
 
   return (
-    <div className="container">
+    <div className="calculator">
       <Input calculation={calculation} />
-      <div className="btn-container">
+      <div className="btn-calculator">
         {buttons.map((button) => <button type="button" name={button.btn} onClick={handleCalculation} key={button.id}>{ button.btn }</button>)}
       </div>
     </div>

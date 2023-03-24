@@ -32,9 +32,9 @@ const Data = () => {
     <div>
       {
         quotes.map((quote) => (
-          <div key={quote.category}>
-            <h1>{quote.author}</h1>
-            <p>
+          <div className="quote-container" key={quote.category}>
+            <h1 className="quote-author">{quote.author}</h1>
+            <p className="quote">
               {quote.quote}
               {' '}
               <span>

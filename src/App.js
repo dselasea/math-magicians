@@ -24,10 +24,10 @@ function App() {
     { id: 19, btn: '=' },
   ];
   return (
-    <>
+    <div className="container">
       <Calculator buttons={buttons} />
       <Data />
-    </>
+    </div>
   );
 }
 
