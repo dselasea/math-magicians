@@ -34,11 +34,12 @@ code {
 }
 
 .container {
-  max-width: 400px;
+  max-width: 1200px;
   width: 80%;
   margin: 4rem auto;
   display: flex;
   flex-direction: row-reverse;
+  gap: 1rem;
 }
 
 .calculator input {
@@ -75,8 +76,34 @@ code {
   font-size: 1.3rem;
 }
 
-.quote-container {
+.quote-container,
+.loading-container,
+.error-container {
   width: 80%;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
   padding: 2rem;
+  text-align: center;
+  height: 15rem;
 }
+
+.loading-container,
+.error-container {
+  display: flex;
+  justify-content: center;
+}
+
+.loading-container div {
+  border: 8px solid #fff;
+  border-top: 8px solid #f67c18;
+  border-bottom: 8px solid #f67c18;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

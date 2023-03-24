@@ -26,10 +26,10 @@ const Data = () => {
     };
     fetchQuotes();
   }, []);
-  if (error) return <div>Something went wrong</div>;
-  if (loading) return <div>Loading...</div>;
+  if (error) return <div className="error-container"><h1>Something went wrong!</h1></div>;
+  if (loading) return <div className="loading-container"><div> </div></div>;
   return (
-    <div>
+    <>
       {
         quotes.map((quote) => (
           <div className="quote-container" key={quote.category}>
@@ -45,7 +45,7 @@ const Data = () => {
           </div>
         ))
       }
-    </div>
+    </>
   );
 };
 
