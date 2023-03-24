@@ -25,7 +25,7 @@ const Data = () => {
       setLoading(false);
     };
     fetchQuotes();
-  }, []);
+  }, [setQuotes]);
   if (error) return <div className="error-container"><h1>Something went wrong!</h1></div>;
   if (loading) return <div className="loading-container"><div> </div></div>;
   return (
