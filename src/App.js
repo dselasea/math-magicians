@@ -1,4 +1,5 @@
 import Calculator from './components/Calculator';
+import Data from './components/Data';
 
 function App() {
   const buttons = [
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
       <Calculator buttons={buttons} />
+      <Data />
     </>
   );
 }
