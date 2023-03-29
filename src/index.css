@@ -109,11 +109,14 @@ code {
 .quote-container,
 .loading-container,
 .error-container {
-  width: 80%;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
   padding: 2rem;
   text-align: center;
   height: 15rem;
+}
+
+.quote-author {
+  margin-bottom: 0.8rem;
 }
 
 .loading-container,
