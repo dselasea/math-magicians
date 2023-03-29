@@ -1,5 +1,6 @@
 import Calculator from './components/Calculator';
 import Data from './components/Data';
+import Navbar from './components/Navbar';
 
 function App() {
   const buttons = [
@@ -25,6 +26,7 @@ function App() {
   ];
   return (
     <div className="container">
+      <Navbar />
       <Calculator buttons={buttons} />
       <Data />
     </div>
