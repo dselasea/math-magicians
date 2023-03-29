@@ -1,5 +1,9 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
 import Calculator from './components/Calculator';
 import Data from './components/Data';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   const buttons = [
@@ -24,10 +28,20 @@ function App() {
     { id: 19, btn: '=' },
   ];
   return (
-    <div className="container">
-      <Calculator buttons={buttons} />
-      <Data />
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/calculator" element={<Calculator buttons={buttons} />} />
+            <Route path="/quote" element={<Data />} />
+            <Route path="*" element={<h1>PAGE DOES NOT EXIST</h1>} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </>
   );
 }
 

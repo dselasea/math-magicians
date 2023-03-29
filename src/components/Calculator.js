@@ -12,12 +12,17 @@ const Calculator = ({ buttons }) => {
   };
 
   return (
-    <div className="calculator">
-      <Input calculation={calculation} />
-      <div className="btn-calculator">
-        {buttons.map((button) => <button type="button" name={button.btn} onClick={handleCalculation} key={button.id}>{ button.btn }</button>)}
+    <section className="calculator">
+      <div className="calculator-title">
+        <h1>Let&lsquo;s do some math!</h1>
       </div>
-    </div>
+      <div>
+        <Input calculation={calculation} />
+        <div className="btn-calculator">
+          {buttons.map((button) => <button type="button" name={button.btn} onClick={handleCalculation} key={button.id}>{ button.btn }</button>)}
+        </div>
+      </div>
+    </section>
   );
 };
 
