@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Calculator from './components/Calculator';
 import Data from './components/Data';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   const buttons = [
@@ -27,7 +28,7 @@ function App() {
     { id: 19, btn: '=' },
   ];
   return (
-    <div>
+    <>
       <Router>
         <Navbar />
         <div className="container">
@@ -38,8 +39,9 @@ function App() {
             <Route path="*" element={<h1>PAGE DOES NOT EXIST</h1>} />
           </Routes>
         </div>
+        <Footer />
       </Router>
-    </div>
+    </>
   );
 }
 

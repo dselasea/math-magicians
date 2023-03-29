@@ -1,3 +1,4 @@
+html,
 body {
   margin: 0;
   font-family:
@@ -14,8 +15,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100vh;
   line-height: 1.7;
+  height: 100vh;
 }
 
 code {
@@ -37,21 +38,24 @@ code {
 .container {
   max-width: 1200px;
   width: 80%;
-  margin: 4rem auto;
+  margin: 0 auto;
+  padding-top: 4rem;
+  height: calc(100vh - 10rem);
 }
 
 .nav-container {
-  background-color: #2E168E;
+  background-color: #2e168e;
 }
+
 .nav {
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
   display: flex;
+  height: 5rem;
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  padding: 1.5rem 0;
 }
 
 .nav h1 {
@@ -149,6 +153,24 @@ code {
   margin-bottom: 0.8rem;
 }
 
+.footer {
+  background-color: #2e168e;
+  height: 5rem;
+  padding: 1rem 0;
+}
+
+.footer .footer-container {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.footer .footer-container span {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -168,7 +190,7 @@ code {
   .calculator-title {
     padding: 0 0 1rem 0;
   }
-  
+
   .calculator-title h1 {
     font-size: 2.5rem;
   }
