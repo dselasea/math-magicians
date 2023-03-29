@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
 import Calculator from './components/Calculator';
 import Data from './components/Data';
 import Navbar from './components/Navbar';
@@ -29,16 +30,13 @@ function App() {
     <div className="container">
       <Router>
         <Navbar />
-        <Route>
-          <Routes path="/" element={<Home />} />
-          <Routes path="/calculator" element={ <Calculator buttons={buttons} /> } />
-          <Routes path="/quote" element={ <Data /> } />
-          <Routes path="*" element={ <h1>PAGE DOES NOT EXIST</h1> } />
-        </Route>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/calculator" element={<Calculator buttons={buttons} />} />
+          <Route path="/quote" element={<Data />} />
+          <Route path="*" element={<h1>PAGE DOES NOT EXIST</h1>} />
+        </Routes>
       </Router>
-      <Navbar />
-      
-      
     </div>
   );
 }
