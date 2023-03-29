@@ -27,15 +27,17 @@ function App() {
     { id: 19, btn: '=' },
   ];
   return (
-    <div className="container">
+    <div>
       <Router>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/calculator" element={<Calculator buttons={buttons} />} />
-          <Route path="/quote" element={<Data />} />
-          <Route path="*" element={<h1>PAGE DOES NOT EXIST</h1>} />
-        </Routes>
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/calculator" element={<Calculator buttons={buttons} />} />
+            <Route path="/quote" element={<Data />} />
+            <Route path="*" element={<h1>PAGE DOES NOT EXIST</h1>} />
+          </Routes>
+        </div>
       </Router>
     </div>
   );
