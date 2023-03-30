@@ -1,28 +1,23 @@
-import calculate from "../logic/calculate";
+import calculate from '../logic/calculate';
 
-describe('Test calculator inputs',() => {
-
+describe('Test calculator inputs', () => {
   test('total: 4, next: 5, operation null and AC', () => {
-    expect(calculate({
-      total: 4,
-      next: 5,
-      operation: null
-    }, 'AC')).toEqual({total: null, next: null, operation: null});
-  })
+    expect(calculate({ total: 4, next: 5, operation: null }, 'AC')).toEqual({ total: null, next: null, operation: null });
+  });
 
   test('total 2, next: 15, operation: x inputs and x', () => {
-    expect(calculate({
-      total: 3,
-      next: 15,
-      operation: 'x'
-    }, 'x')).toEqual({total: "45" , next: null, operation: "x" });
-  })
+    expect(calculate({ total: 3, next: 15, operation: 'x' }, 'x')).toEqual({ total: '45', next: null, operation: 'x' });
+  });
 
-  test('total: 4, next: 5, operation +/- inputs and =', () => {
-    expect(calculate({
-      total: 4,
-      next: 5,
-      operation: '+/-'
-    }, '+/-')).toEqual({total: 4 , next: "-5", operation: "+/-" });
-  })
-})
+  test('total: 4, next: 5, operation + inputs and +/-', () => {
+    expect(calculate({ total: 4, next: 5, operation: '+' }, '+/-')).toEqual({ total: 4, next: '-5', operation: '+' });
+  });
+
+  test('total: 5, next: 5, operation + inputs and %', () => {
+    expect(calculate({ total: 5, next: 5, operation: '+' }, '%')).toEqual({ total: '10', next: null, operation: '%' });
+  });
+
+  test('total: 5, next: 5, operation  x inputs and .', () => {
+    expect(calculate({ total: 5, next: 5, operation: 'x' }, '+')).toEqual({ total: '25', next: null, operation: '+' });
+  });
+});
