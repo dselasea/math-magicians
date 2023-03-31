@@ -1,11 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="https://avatars.githubusercontent.com/u/9299437?s=400&u=9359fc239c5d26e1acc3d2b79080e56f02d10e69&v=4" alt="Daniel Selase Anyidoho" width="140"  height="auto" />
-  <br/>
-</div>
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)

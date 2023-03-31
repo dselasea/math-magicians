@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Input Component 1`] = `
+<div>
+  <input
+    id="input"
+    readOnly={true}
+    type="text"
+    value="  "
+  />
+</div>
+`;

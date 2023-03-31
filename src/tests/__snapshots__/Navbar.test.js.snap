@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Navbar Component 1`] = `
+<div
+  className="nav-container"
+>
+  <nav
+    className="nav"
+  >
+    <div>
+      <h1>
+        Math Magicians
+      </h1>
+    </div>
+    <div
+      className="links"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        href="/calculator"
+        onClick={[Function]}
+      >
+        Calculator
+      </a>
+      <a
+        href="/quote"
+        onClick={[Function]}
+      >
+        Quotes
+      </a>
+    </div>
+  </nav>
+</div>
+`;
